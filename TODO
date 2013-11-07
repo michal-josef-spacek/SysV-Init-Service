@@ -2,7 +2,8 @@ TODO
 ====
 1. Prvni verze.
 2. Prejmenovat na SysV::Init::Service?
-3.
+3. Slo by nejak ziskat PID sluzby?
+4.
 
 Applied
 =======
