@@ -6,6 +6,7 @@ use warnings;
 
 # Modules.
 use Class::Utils qw(set_params);
+use English qw(-no_match_vars);
 use Error::Pure qw(err);
 use File::Spec::Functions qw(catfile);
 use IO::CaptureOutput qw(capture_exec);
@@ -64,6 +65,24 @@ sub name {
 	return $self->{'service'};
 }
 
+# Start service.
+sub start {
+	my $self = shift;
+	my ($stdout, $stderr, $success, $exit_code) = (undef, undef, undef, 1);
+	if (any { $_ eq 'start'} $self->commands) {
+		($stdout, $stderr, $success, $exit_code)
+			= capture_exec($self->{'_service_path'}.' start');
+		if ($stderr) {
+			chomp $stderr;
+			err "Problem with service '$self->{'service'}' start.",
+				'STDERR', $stderr;
+		}
+	} else {
+		err "Service hasn't start command.";
+	}
+	return $exit_code;
+}
+
 # Get status.
 sub status {
 	my $self = shift;
@@ -71,6 +90,26 @@ sub status {
 	if (any { $_ eq 'status'} $self->commands) {
 		($stdout, $stderr, $success, $exit_code)
 			= capture_exec($self->{'_service_path'}.' status');
+	} else {
+		err "Service hasn't status command.";
+	}
+	return $exit_code;
+}
+
+# Stop service.
+sub stop {
+	my $self = shift;
+	my ($stdout, $stderr, $success, $exit_code) = (undef, undef, undef, 1);
+	if (any { $_ eq 'stop'} $self->commands) {
+		($stdout, $stderr, $success, $exit_code)
+			= capture_exec($self->{'_service_path'}.' stop');
+		if ($stderr) {
+			chomp $stderr;
+			err "Problem with service '$self->{'service'}' stop.",
+				'STDERR', $stderr;
+		}
+	} else {
+		err "Service hasn't stop command.";
 	}
 	return $exit_code;
 }
