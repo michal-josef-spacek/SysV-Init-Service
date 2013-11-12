@@ -1,0 +1,28 @@
+# Pragmas.
+use strict;
+use warnings;
+
+# Modules.
+use File::Object;
+use SysV::Init::Service;
+use Test::More 'tests' => 2;
+use Test::NoWarnings;
+
+# Service dir.
+my $service_dir = File::Object->new->up->dir('services');
+
+# Test.
+my $obj = SysV::Init::Service->new(
+	'service' => 'service',
+	'service_dir' => $service_dir->s,
+);
+my @ret = $obj->commands;
+is_deeply(
+	\@ret,
+	[
+		'start',
+		'status',
+		'stop',
+	],
+	'Get commands.',
+);
