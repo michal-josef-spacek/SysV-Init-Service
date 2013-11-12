@@ -256,6 +256,9 @@ Constructor.
 
  # Print commands to output.
  map { print $_."\n"; } @commands;
+
+ # Clean.
+ unlink $fake_file;
  
  # Output:
  # start
