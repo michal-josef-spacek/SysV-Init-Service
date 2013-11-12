@@ -4,7 +4,9 @@ TODO
 4. Dalsi testy.
 5. V Makefile.PL automaticky updatovat examples/ adresar.
 6. Co se systemy jako Windows?
-7.
+7. Co se sluzbout jako alsa-utils, ktera vraci toto:
+   Usage: /etc/init.d/alsa-utils {start [CARD]|stop [CARD]|restart [CARD]|reset [CARD]}
+8.
 
 Applied
 =======
