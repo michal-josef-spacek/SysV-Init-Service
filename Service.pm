@@ -35,6 +35,9 @@ sub new {
 	if (! defined $self->{'service'}) {
 		err "Parameter 'service' is required.";
 	}
+	if ($self->{'service'} =~ m/\.sh$/ms) {
+		err "Service with .sh suffix doesn't possible.";
+	}
 	$self->{'_service_path'} = catfile($self->{'service_dir'},
 		$self->{'service'});
 	if (! -x $self->{'_service_path'}) {
@@ -194,6 +197,7 @@ Constructor.
  new():
          Parameter 'service' is required.
          Service '%s' doesn't present.
+         Service with .sh suffix doesn't possible.
          From Class::Utils::set_params():
                  Unknown parameter '%s'.
 

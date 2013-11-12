@@ -16,6 +16,7 @@ META.yml
 README
 Service.pm
 SIGNATURE
+t/services/service.sh
 t/services/service1
 t/services/service2
 t/services/service3

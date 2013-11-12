@@ -7,7 +7,7 @@ use English qw(-no_match_vars);
 use Error::Pure::Utils qw(clean);
 use File::Object;
 use SysV::Init::Service;
-use Test::More 'tests' => 6;
+use Test::More 'tests' => 7;
 use Test::NoWarnings;
 
 # Service dir.
@@ -54,4 +54,15 @@ eval {
 };
 is($EVAL_ERROR, "Service 'service_no_exec' doesn't present.\n",
 	"Service 'service_no_exec' doesn't present.");
+clean();
+
+# Test.
+eval {
+	SysV::Init::Service->new(
+		'service' => 'service.sh',
+		'service_dir' => $service_dir->s,
+	);
+};
+is($EVAL_ERROR, "Service with .sh suffix doesn't possible.\n",
+	"Service with .sh suffix doesn't possible.");
 clean();
