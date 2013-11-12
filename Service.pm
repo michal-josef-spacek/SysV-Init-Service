@@ -51,8 +51,7 @@ sub commands {
 	my ($stdout, $stderr, $success, $exit_code)
 		= capture_exec($self->{'_service_path'});
 	if ($stderr) {
-		err "Problem with run service '$self->{'service'}'.",
-			'STDERR', $stderr;
+		$stdout .= $stderr;
 	}
 	my @commands;
 	if ($stdout =~ m/{([\w\|\-]+)}/ms) {
@@ -195,10 +194,6 @@ Constructor.
          Service '%s' doesn't present.
          From Class::Utils::set_params():
                  Unknown parameter '%s'.
-
- commands():
-         Problem with run service '%s'.
-                 STDERR: %s
 
  start():
          Problem with service '%s' start.

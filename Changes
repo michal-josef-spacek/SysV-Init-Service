@@ -1,7 +1,7 @@
 0.02
- - Fix error in commands() method. Init.d script returns default exit code
-   greater than 0.
  - Fix warnings in commands() method.
+ - Remove error and fix code in commands() method. Init.d script returns
+   default exit code greater than 0.
 
 0.01 2013-11-12
  - First version.

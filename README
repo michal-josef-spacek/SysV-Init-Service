@@ -52,10 +52,6 @@ ERRORS
              From Class::Utils::set_params():
                      Unknown parameter '%s'.
 
-     commands():
-             Problem with run service '%s'.
-                     STDERR: %s
-
      start():
              Problem with service '%s' start.
                      STDERR: %s
