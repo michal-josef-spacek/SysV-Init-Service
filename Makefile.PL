@@ -10,6 +10,7 @@ abstract 'Class for SysV init service manipulation.';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'SysV-Init-Service';
+readme_from 'Service.pm';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=SysV-Init-Service';
 resources 'homepage' => 'https://github.com/tupinek/SysV-Init-Service';
