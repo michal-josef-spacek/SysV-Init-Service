@@ -54,11 +54,10 @@ sub commands {
 		err "Problem with run service '$self->{'service'}'.",
 			'STDERR', $stderr;
 	}
-	my $commands;
+	my @commands;
 	if ($stdout =~ m/{([\w\|\-]+)}/ms) {
-		$commands = $1;
+		@commands = split m/\|/ms, $1;
 	}
-	my @commands = split m/\|/ms, $commands;
 	return sort @commands;
 }
 
