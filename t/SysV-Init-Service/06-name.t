@@ -13,8 +13,8 @@ my $service_dir = File::Object->new->up->dir('services');
 
 # Test.
 my $obj = SysV::Init::Service->new(
-	'service' => 'service',
+	'service' => 'service1',
 	'service_dir' => $service_dir->s,
 );
 my $ret = $obj->name;
-is($ret, 'service', 'Get service name.');
+is($ret, 'service1', 'Get service name.');

@@ -16,7 +16,7 @@ META.yml
 README
 Service.pm
 SIGNATURE
-t/services/service
+t/services/service1
 t/services/service_no_exec
 t/SysV-Init-Service/00-use.t
 t/SysV-Init-Service/01-version.t

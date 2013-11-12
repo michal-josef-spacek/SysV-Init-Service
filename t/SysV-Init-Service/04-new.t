@@ -40,7 +40,7 @@ clean();
 
 # Test.
 my $obj = SysV::Init::Service->new(
-	'service' => 'service',
+	'service' => 'service1',
 	'service_dir' => $service_dir->s,
 );
 isa_ok($obj, 'SysV::Init::Service');
