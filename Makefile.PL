@@ -11,6 +11,12 @@ author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'SysV-Init-Service';
 readme_from 'Service.pm';
+requires 'Class::Utils' => 0.05;
+requires 'English' => 0;
+requires 'Error::Pure' => 0.14;
+requires 'File::Spec::Functions' => 0;
+requires 'IO::CaptureOutput' => 0;
+requires 'List::MoreUtils' => 0;
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=SysV-Init-Service';
 resources 'homepage' => 'https://github.com/tupinek/SysV-Init-Service';
