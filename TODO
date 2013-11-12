@@ -1,6 +1,5 @@
 TODO
 ====
-1. Prvni verze.
 3. Slo by nejak ziskat PID sluzby?
 4.
 
@@ -8,3 +7,6 @@ Applied
 =======
 2. Prejmenovat na SysV::Init::Service?
 OK [20131107] skim
+
+1. Prvni verze.
+OK [20131112] skim
