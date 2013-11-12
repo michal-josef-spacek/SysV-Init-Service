@@ -1,0 +1,53 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.70.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 7e7766f864ff039c52b0cab881d78e30a5986519 Changes
+SHA1 2039384c67092a5dcb07a7ac68cec34f42eadf9a LICENSE
+SHA1 d56bfa00ebac2f6d2199b8749830ae2a42e9e8d3 MANIFEST
+SHA1 0d75eb5aab29b77d349e1d2589e13c5ffc10addd META.yml
+SHA1 2f92f68c62f77f3f3e1975f11fd8a25097b45f48 Makefile.PL
+SHA1 d4240bf414c57acb30e0f921c4df0bd3dec552d9 README
+SHA1 319489c1cb40473e914f6406522c8e60fdaaf368 Service.pm
+SHA1 d753520134d5b67c6d4647f82c0a91a2dff2fd67 examples/ex1.pl
+SHA1 8a924add836b60fb23b25c8506d45945e02f42f4 inc/Module/Install.pm
+SHA1 2d0fad3bf255f8c1e7e1e34eafccc4f595603ddc inc/Module/Install/Base.pm
+SHA1 f0e01fff7d73cd145fbf22331579918d4628ddb0 inc/Module/Install/Can.pm
+SHA1 7328966e4fda0c8451a6d3850704da0b84ac1540 inc/Module/Install/Fetch.pm
+SHA1 b62ca5e2d58fa66766ccf4d64574f9e1a2250b34 inc/Module/Install/Makefile.pm
+SHA1 1aa925be410bb3bfcd84a16985921f66073cc1d2 inc/Module/Install/Metadata.pm
+SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
+SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
+SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
+SHA1 9e61f32cc1f961c9ce4e1a940977543c2a9b85f1 t/SysV-Init-Service/00-use.t
+SHA1 94a055b3acc7e17b558e64de3ff2e3c29923c276 t/SysV-Init-Service/01-version.t
+SHA1 a82a5d724e1f0258cfbc17df6f9670bb927c900a t/SysV-Init-Service/02-pod_coverage.t
+SHA1 0f936d457ec06d26caccd36196cc1d45f324e193 t/SysV-Init-Service/03-pod.t
+SHA1 881a3d83943bfcf16e34524d3575efed9c41eb1a t/SysV-Init-Service/04-new.t
+SHA1 d94fc7fed6d64a2760bdf153e65def6f11456740 t/SysV-Init-Service/05-commands.t
+SHA1 5344ab5e010334ed5cc22f064ab57628b6a0c9e5 t/SysV-Init-Service/06-name.t
+SHA1 91a482116eb54a24b1b05356245d2cd7d7f5a327 t/services/service
+SHA1 91a482116eb54a24b1b05356245d2cd7d7f5a327 t/services/service_no_exec
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQEcBAEBAgAGBQJSgg6jAAoJEAwa+cf4dLBahFoIAKpMa9GqUZr/4fzpSv6obLK+
+Gn7c7hwfEMAiHveEiswROC8FjRKg6d8RfhZNLlwQ1klPXleoRUyn8jF4tlCJyLsV
+R8/lMNyRpVWcDq8xNbkAFVhnsuX4MOEsuJllur8nAIHDY1ckiO8UTocJAh6OleEI
+3fqI0BQg9Zwi8lEkRN8puQfpzmON91U9eCcrmeEOJqvJG58NJFYM+3SUhad1DCHT
+VUgHKJlKSWeZq/xYiWpIsVh/kbp0Y76tqm3/y2FfiDO7zmLbi8r8RZ7xMk8garNe
+z+E+6LtLroM01IxFLApXfCGhWkgO+h2UzTSEfvZaUUlDY7FHKUfF70OTfKVdq2k=
+=WuAS
+-----END PGP SIGNATURE-----

@@ -15,6 +15,7 @@ MANIFEST			This list of files
 META.yml
 README
 Service.pm
+SIGNATURE
 t/services/service
 t/services/service_no_exec
 t/SysV-Init-Service/00-use.t
