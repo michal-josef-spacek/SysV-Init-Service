@@ -16,7 +16,9 @@ MANIFEST			This list of files
 META.yml
 README
 Service.pm
+t/services/service
 t/SysV-Init-Service/00-use.t
 t/SysV-Init-Service/01-version.t
 t/SysV-Init-Service/02-pod_coverage.t
 t/SysV-Init-Service/03-pod.t
+t/SysV-Init-Service/04-new.t
