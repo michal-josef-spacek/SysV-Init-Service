@@ -6,7 +6,8 @@ TODO
 6. Co se systemy jako Windows?
 7. Co se sluzbout jako alsa-utils, ktera vraci toto:
    Usage: /etc/init.d/alsa-utils {start [CARD]|stop [CARD]|restart [CARD]|reset [CARD]}
-8.
+8. Pravdepodobne se tady bude hodit nejaka promenna pro sluzby, ktere vynechat.
+9.
 
 Applied
 =======
