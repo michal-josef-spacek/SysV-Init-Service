@@ -120,6 +120,9 @@ DEPENDENCIES
     Class::Utils, English, Error::Pure, File::Spec::Functions,
     IO::CaptureOutput, List::MoreUtils.
 
+SEE ALSO
+    service.
+
 REPOSITORY
     <https://github.com/tupinek/SysV-Init-Service>
 

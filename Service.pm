@@ -274,6 +274,10 @@ L<File::Spec::Functions>,
 L<IO::CaptureOutput>,
 L<List::MoreUtils>.
 
+=head1 SEE ALSO
+
+L<service>.
+
 =head1 REPOSITORY
 
 L<https://github.com/tupinek/SysV-Init-Service>
