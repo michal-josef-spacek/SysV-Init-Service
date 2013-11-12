@@ -1,5 +1,6 @@
 0.02
  - Add support for parsing commands from "Usage: $0 start".
+ - Add tests for command() method.
  - Fix warnings in commands() method.
  - Remove error and fix code in commands() method. Init.d script returns
    default exit code greater than 0.
