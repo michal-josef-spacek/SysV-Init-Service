@@ -56,6 +56,8 @@ sub commands {
 	my @commands;
 	if ($stdout =~ m/{([\w\|\-]+)}/ms) {
 		@commands = split m/\|/ms, $1;
+	} elsif ($stdout =~ m/([\w\-]+)\s*$/ms) {
+		@commands = $1;
 	}
 	return sort @commands;
 }
