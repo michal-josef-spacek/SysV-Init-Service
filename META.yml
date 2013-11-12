@@ -37,4 +37,4 @@ resources:
   homepage: https://github.com/tupinek/SysV-Init-Service
   license: http://opensource.org/licenses/bsd-license.php
   repository: git://github.com/tupinek/SysV-Init-Service
-version: 0.02
+version: 0.03
