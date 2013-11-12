@@ -27,7 +27,7 @@ METHODS
 
     "commands()"
              Get service commands.
-             Returns array of possible commands.
+             Returns array of possible commands alphabetically sorted.
 
     "name()"
              Get service name.

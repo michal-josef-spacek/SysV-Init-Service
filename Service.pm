@@ -62,7 +62,7 @@ sub commands {
 		$commands = $1;
 	}
 	my @commands = split m/\|/ms, $commands;
-	return @commands;
+	return sort @commands;
 }
 
 # Get service name.
@@ -168,7 +168,7 @@ Constructor.
 =item C<commands()>
 
  Get service commands.
- Returns array of possible commands.
+ Returns array of possible commands alphabetically sorted.
 
 =item C<name()>
 
