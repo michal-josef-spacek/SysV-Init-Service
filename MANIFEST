@@ -16,6 +16,7 @@ META.yml
 README
 Service.pm
 t/services/service
+t/services/service_no_exec
 t/SysV-Init-Service/00-use.t
 t/SysV-Init-Service/01-version.t
 t/SysV-Init-Service/02-pod_coverage.t

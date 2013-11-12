@@ -7,7 +7,7 @@ use English qw(-no_match_vars);
 use Error::Pure::Utils qw(clean);
 use File::Object;
 use SysV::Init::Service;
-use Test::More 'tests' => 5;
+use Test::More 'tests' => 6;
 use Test::NoWarnings;
 
 # Service dir.
@@ -44,3 +44,14 @@ my $obj = SysV::Init::Service->new(
 	'service_dir' => $service_dir->s,
 );
 isa_ok($obj, 'SysV::Init::Service');
+
+# Test.
+eval {
+	SysV::Init::Service->new(
+		'service' => 'service_no_exec',
+		'service_dir' => $service_dir->s,
+	);
+};
+is($EVAL_ERROR, "Service 'service_no_exec' doesn't present.\n",
+	"Service 'service_no_exec' doesn't present.");
+clean();
