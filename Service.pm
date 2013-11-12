@@ -13,7 +13,7 @@ use IO::CaptureOutput qw(capture_exec);
 use List::MoreUtils qw(any);
 
 # Version.
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 # Construct.
 sub new {
@@ -294,6 +294,6 @@ BSD license.
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut
