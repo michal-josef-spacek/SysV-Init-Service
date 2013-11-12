@@ -50,7 +50,13 @@ sub commands {
 	my $self = shift;
 	my ($stdout, $stderr, $success, $exit_code)
 		= capture_exec($self->{'_service_path'});
-	# TODO Check.
+	if ($exit_code > 0) {
+		my @err;
+		if ($stderr) {
+			push @err, 'STDERR', $stderr;
+		}
+		err "Problem with run service '$self->{'service'}'.", @err;
+	}
 	my $commands;
 	if ($stdout =~ m/{([\w\|\-]+)}/ms) {
 		$commands = $1;
