@@ -121,3 +121,136 @@ sub stop {
 }
 
 1;
+
+__END__
+
+=pod
+
+=encoding utf8
+
+=head1 NAME
+
+SysV::Init::Service - Class for SysV init service manipulation.
+
+=head1 SYNOPSIS
+
+ use SysV::Init::Service;
+ my $obj = SysV::Init::Service->new(%parameters);
+ my @commands = $obj->commands;
+ my $name = $obj->name;
+ my $exit_code = $obj->start;
+ my $exit_code = $obj->status;
+ my $exit_code = $obj->stop;
+
+=head1 METHODS
+
+=over 8
+
+=item C<new(%parameters)>
+
+Constructor.
+
+=over 8
+
+=item * C<service>
+
+ Service.
+ Default value is undef.
+ It is required.
+
+=item * C<service_dir>
+
+ Service directory.
+ Default value is '/etc/init.d'.
+
+=back
+
+=item C<commands()>
+
+ Get service commands.
+ Returns array of possible commands.
+
+=item C<name()>
+
+ Get service name.
+ Returns string with service name.
+
+=item C<start()>
+
+ Run service start command.
+ Returns exit code.
+
+=item C<status()>
+
+ Run service status command and return exit code.
+ Returns exit code.
+
+=item C<stop()>
+
+ Run service stop command.
+ Returns exit code.
+
+=back
+
+=head1 ERRORS
+
+ new():
+         Parameter 'service' is required.
+         Service '%s' doesn't present.
+         From Class::Utils::set_params():
+                 Unknown parameter '%s'.
+
+ commands():
+         Problem with run service '%s'.
+                 STDERR: %s
+
+ start():
+         Problem with service '%s' start.
+                 STDERR: %s
+         Service hasn't start command.
+
+ status():
+         Service hasn't status command.
+
+ stop():
+         Problem with service '%s' stop.
+                 STDERR: %s
+         Service hasn't stop command.
+
+=head1 EXAMPLE
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ # TODO
+
+=head1 DEPENDENCIES
+
+L<Class::Utils>,
+L<English>,
+L<Error::Pure>,
+L<File::Spec::Functions>,
+L<IO::CaptureOutput>,
+L<List::MoreUtils>.
+
+=head1 REPOSITORY
+
+L<https://github.com/tupinek/SysV-Init-Service>
+
+=head1 AUTHOR
+
+Michal Špaček L<mailto:skim@cpan.org>
+
+L<http://skim.cz>
+
+=head1 LICENSE AND COPYRIGHT
+
+BSD license.
+
+=head1 VERSION
+
+0.01
+
+=cut
