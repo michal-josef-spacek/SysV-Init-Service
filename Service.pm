@@ -86,7 +86,7 @@ sub start {
 	} else {
 		err "Service hasn't start command.";
 	}
-	return $exit_code;
+	return $exit_code >> 8;
 }
 
 # Get status.
@@ -99,7 +99,7 @@ sub status {
 	} else {
 		err "Service hasn't status command.";
 	}
-	return $exit_code;
+	return $exit_code >> 8;
 }
 
 # Stop service.
@@ -117,7 +117,7 @@ sub stop {
 	} else {
 		err "Service hasn't stop command.";
 	}
-	return $exit_code;
+	return $exit_code >> 8;
 }
 
 1;
