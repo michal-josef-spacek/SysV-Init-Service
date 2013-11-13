@@ -59,6 +59,8 @@ ERRORS
              Service hasn't start command.
 
      status():
+             Problem with service '%s' status.
+                     STDERR: %s
              Service hasn't status command.
 
      stop():
