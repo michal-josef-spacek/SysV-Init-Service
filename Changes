@@ -1,4 +1,5 @@
 0.03
+ - Add dependency for perl (based on Error::Pure).
 
 0.02 2013-11-12
  - Add check for services with ".sh" suffix.

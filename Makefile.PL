@@ -17,6 +17,7 @@ requires 'Error::Pure' => 0.14;
 requires 'File::Spec::Functions' => 0;
 requires 'IO::CaptureOutput' => 0;
 requires 'List::MoreUtils' => 0;
+requires 'perl' => '5.6.2';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=SysV-Init-Service';
 resources 'homepage' => 'https://github.com/tupinek/SysV-Init-Service';
