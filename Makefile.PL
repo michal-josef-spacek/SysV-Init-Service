@@ -13,7 +13,7 @@ name 'SysV-Init-Service';
 readme_from 'Service.pm';
 requires 'Class::Utils' => 0.05;
 requires 'English' => 0;
-requires 'Error::Pure' => 0.14;
+requires 'Error::Pure' => 0.15;
 requires 'File::Spec::Functions' => 0;
 requires 'IO::CaptureOutput' => 0;
 requires 'List::MoreUtils' => 0;
