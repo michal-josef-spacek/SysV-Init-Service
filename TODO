@@ -10,7 +10,8 @@ TODO
 9. V insserv(8) je sekce NOTE, bylo by dobre to promyslet.
 10. Nejak resit exit code. Viz perldoc -f system. Bylo by dobre vedet, co se
     vlastne vsechno muze stat.
-11.
+11. Prozkoumat webmin/init, jak to delaji oni.
+12.
 
 Applied
 =======
