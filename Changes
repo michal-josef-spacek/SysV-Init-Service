@@ -3,6 +3,7 @@
  - Internal rewrite to common command and add error for status() method.
  - Fix exit status.
  - Up version for Error::Pure dependency.
+ - Update Module::Install to 1.08 version.
 
 0.02 2013-11-12
  - Add check for services with ".sh" suffix.
