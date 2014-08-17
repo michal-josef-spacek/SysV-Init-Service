@@ -1,6 +1,7 @@
 0.03
  - Add dependency for perl (based on Error::Pure).
  - Internal rewrite to common command and add error for status() method.
+ - Fix LICENSE file.
  - Fix exit status.
  - Up version for Error::Pure dependency.
  - Update Module::Install to 1.08 version.
