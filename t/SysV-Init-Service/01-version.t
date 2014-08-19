@@ -8,4 +8,4 @@ use Test::More 'tests' => 2;
 use Test::NoWarnings;
 
 # Test.
-is($SysV::Init::Service::VERSION, 0.03, 'Version.');
+is($SysV::Init::Service::VERSION, 0.04, 'Version.');

@@ -1,3 +1,5 @@
+0.04
+
 0.03 2014-08-19T06:34:34+02:00
  - Add dependency for perl (based on Error::Pure).
  - Internal rewrite to common command and add error for status() method.
