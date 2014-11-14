@@ -1,6 +1,6 @@
 0.04
  - Fix minimal version of Perl (not depend on dependencies).
- - Update Module::Install to 1.12 version.
+ - Update Module::Install to 1.14 version.
 
 0.03 2014-08-19T06:34:34+02:00
  - Add dependency for perl (based on Error::Pure).
