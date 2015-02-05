@@ -246,7 +246,7 @@ Constructor.
 
  # Chmod.
  chmod 0755, $fake_file;
- 
+
  # Service object.
  my $obj = SysV::Init::Service->new(
          'service' => 'fake',
@@ -261,7 +261,7 @@ Constructor.
 
  # Clean.
  unlink $fake_file;
- 
+
  # Output:
  # start
  # stop
