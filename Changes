@@ -1,4 +1,5 @@
 0.04
+ - Add tests for status() method.
  - Fix minimal version of Perl (not depend on dependencies).
  - Fix start(), status() and stop() methods calling.
  - Update LICENSE AND COPYRIGHT section in doc.

@@ -28,3 +28,4 @@ t/SysV-Init-Service/03-pod.t
 t/SysV-Init-Service/04-new.t
 t/SysV-Init-Service/05-commands.t
 t/SysV-Init-Service/06-name.t
+t/SysV-Init-Service/07-status.t
