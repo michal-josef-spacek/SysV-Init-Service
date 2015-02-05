@@ -68,6 +68,21 @@ ERRORS
                      STDERR: %s
              Service hasn't stop command.
 
+THEORY
+     Exit codes of init.d script in status command.
+     see Debian Wheezy /lib/lsb/init-functions pidofproc() and status_of_proc()
+     routines.
+     Exit codes:
+     0 - Program is running (pidfile exist). 
+     0 - Program is running, but not owned by this user (pidfile exist).
+     0 - (pidfile doesn't exist and is defined PID)
+     1 - Program is dead (pidfile exist).
+     3 - Program is not running (pidfile doesn't exist and is defined PID).
+     3 - Program probably stopped (pidfile doesn't exist and is defined PID).
+     3 - Almost certain program is not running (pidfile doesn't exist).
+     4 - PID file not readable, hence status is unknown.
+     4 - Unable to determine status (pidfile doesn't exist).
+
 EXAMPLE
      # Pragmas.
      use strict;
