@@ -12,7 +12,7 @@ use File::Spec::Functions qw(catfile);
 use IO::CaptureOutput qw(capture_exec);
 
 # Version.
-our $VERSION = 0.04;
+our $VERSION = 0.05;
 
 # Construct.
 sub new {
@@ -295,6 +295,6 @@ L<http://skim.cz>
 
 =head1 VERSION
 
-0.04
+0.05
 
 =cut
