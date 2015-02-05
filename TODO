@@ -4,10 +4,13 @@ TODO
 4. Dalsi testy.
 7. Co se sluzbou jako alsa-utils, ktera vraci toto:
    Usage: /etc/init.d/alsa-utils {start [CARD]|stop [CARD]|restart [CARD]|reset [CARD]}
+Je otazkou, jestli vubec mit ten error s check pro stderr. Protoze tohle vypise
+stderr, status neni k dispozici a to by melo byt v poradku.
 8. Pravdepodobne se tady bude hodit nejaka promenna pro sluzby, ktere vynechat.
 9. V insserv(8) je sekce NOTE, bylo by dobre to promyslet.
 10. Nejak resit exit code. Viz perldoc -f system. Bylo by dobre vedet, co se
     vlastne vsechno muze stat.
+THEORY section in doc.
 11. Prozkoumat webmin/init, jak to delaji oni.
 12.
 
