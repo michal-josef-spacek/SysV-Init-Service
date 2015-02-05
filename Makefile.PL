@@ -3,7 +3,13 @@ use strict;
 use warnings;
 
 # Modules.
+use English;
 use inc::Module::Install;
+
+# Check OS.
+if ($OSNAME eq "MSWin32") {
+	die "OS unsupported\n";
+}
 
 # Definition.
 abstract 'Class for SysV init service manipulation.';

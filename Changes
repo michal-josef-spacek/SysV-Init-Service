@@ -1,4 +1,5 @@
 0.04
+ - Add OS check (Windows doesn't supported).
  - Add THEORY section to doc.
  - Add tests for status() method.
  - Fix minimal version of Perl (not depend on dependencies).
