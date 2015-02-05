@@ -1,5 +1,6 @@
 0.04
  - Fix minimal version of Perl (not depend on dependencies).
+ - Fix start(), status() and stop() methods calling.
  - Update LICENSE AND COPYRIGHT section in doc.
  - Update Module::Install to 1.14 version.
  - Update copyright years.

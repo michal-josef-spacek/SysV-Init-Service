@@ -74,19 +74,19 @@ sub name {
 # Start service.
 sub start {
 	my $self = shift;
-	return $self->_command('start');
+	return $self->_service_command('start');
 }
 
 # Get status.
 sub status {
 	my $self = shift;
-	return $self->_command('status');
+	return $self->_service_command('status');
 }
 
 # Stop service.
 sub stop {
 	my $self = shift;
-	return $self->_command('stop');
+	return $self->_service_command('stop');
 }
 
 # Common command.
