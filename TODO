@@ -2,7 +2,6 @@ TODO
 ====
 3. Slo by nejak ziskat PID sluzby?
 4. Dalsi testy.
-6. Co se systemy jako Windows?
 7. Co se sluzbou jako alsa-utils, ktera vraci toto:
    Usage: /etc/init.d/alsa-utils {start [CARD]|stop [CARD]|restart [CARD]|reset [CARD]}
 8. Pravdepodobne se tady bude hodit nejaka promenna pro sluzby, ktere vynechat.
@@ -22,3 +21,7 @@ OK [20131112] skim
 
 5. V Makefile.PL automaticky updatovat examples/ adresar.
 NONE [20141218] skim
+
+6. Co se systemy jako Windows?
+Nedovolim instalovat.
+OK [20150205] skim
