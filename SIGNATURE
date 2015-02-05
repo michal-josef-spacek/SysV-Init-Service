@@ -14,43 +14,45 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 b5acc30ea4c59579ce2bab9e510597eb31d0b10f Changes
-SHA1 d32d1b957eb6d99bd7b76fd8c33dac3bed505f96 LICENSE
-SHA1 fcbbe405d53a481e9ef0439e138c46aa43ecc927 MANIFEST
-SHA1 0e20947ca736189fc49abe49149611800bbe6f59 META.yml
-SHA1 edef6989938402de74375e4973d3c66737ff3c7a Makefile.PL
-SHA1 d1560d4053f3a7d220ca4143f97b92d1d5e60e3d README
-SHA1 1709860c1ec975e2307f31b78cde84cc4708c4ef Service.pm
+SHA1 be7f61ebeb8852ae3fef1bdc145fda3ca4ef1ef9 Changes
+SHA1 7d9986bc37f4cfa2dc2bfb0ee5323b1a046e91ff LICENSE
+SHA1 8c4c50caa2d213695e192f4e24eca8480c0dc48c MANIFEST
+SHA1 0999fd0bfa6f87bf6780fb9996c7237f43976d60 META.yml
+SHA1 e164cbe23af9b018fbf7fa1d8cb13dfdb3eda3b0 Makefile.PL
+SHA1 f925e7a4566271c1b6627b062010b887d2067c78 README
+SHA1 4f1554333c3843381b5221a8be593351b7cb8b38 Service.pm
 SHA1 d753520134d5b67c6d4647f82c0a91a2dff2fd67 examples/ex1.pl
-SHA1 4f7982f7e554df23debce735ab343d88d7355140 inc/Module/Install.pm
-SHA1 c68c85ca62ae30d83f633975cd9af2a0789f59e0 inc/Module/Install/Base.pm
-SHA1 4797fd314e2653a427e725104704b0320993ba8c inc/Module/Install/Can.pm
-SHA1 b771d93af2bfc41273f48fa36082bf1bd6f21dbe inc/Module/Install/Fetch.pm
-SHA1 f4f3258a505a432a58cbcdc1fd030ef5e8e90985 inc/Module/Install/Makefile.pm
-SHA1 100a0dd8572f0b40373350fdd6c0a6f035d9dc39 inc/Module/Install/Metadata.pm
+SHA1 d2664c57b65686abbfbbe1e71229761625be4922 inc/Module/Install.pm
+SHA1 da41a8d9904f7b409b49a5f6c338d3eb305a2b4b inc/Module/Install/Base.pm
+SHA1 0db0afe19cd298abba248fa089e5525bd5ab3ab6 inc/Module/Install/Can.pm
+SHA1 e7152bfd5ca67d0e33f96d09c59d600bca5c1f15 inc/Module/Install/Fetch.pm
+SHA1 29ee1cb0dc262b00983e3a2f5cf00b538dff5069 inc/Module/Install/Makefile.pm
+SHA1 e963f80cfe255f16e55067d1feb6841cff3ed2fe inc/Module/Install/Metadata.pm
 SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
-SHA1 4490fed943f4e556db9fd054b7ec8765ca417f7d inc/Module/Install/Win32.pm
-SHA1 8464ddf690b9f7036a0974ff172ec0ced2f6a329 inc/Module/Install/WriteAll.pm
+SHA1 65a1f09af1f4f9e47a98b6b45667c328b1b2f9c0 inc/Module/Install/Win32.pm
+SHA1 f191c49475b3f51775180cd4f7e41e3bdab7f85a inc/Module/Install/WriteAll.pm
 SHA1 9e61f32cc1f961c9ce4e1a940977543c2a9b85f1 t/SysV-Init-Service/00-use.t
-SHA1 1d8fd7afbe9306c877657c5430496c9323f60717 t/SysV-Init-Service/01-version.t
+SHA1 4a1fe41de275b7e15fc625357c7b7f99da99a1ca t/SysV-Init-Service/01-version.t
 SHA1 a82a5d724e1f0258cfbc17df6f9670bb927c900a t/SysV-Init-Service/02-pod_coverage.t
 SHA1 0f936d457ec06d26caccd36196cc1d45f324e193 t/SysV-Init-Service/03-pod.t
 SHA1 126fe9f5e1af19c14cdd188e48c62eaf66fa17b6 t/SysV-Init-Service/04-new.t
 SHA1 e6979841820768ea3fb1b5aea1f33c7c0bc89e6d t/SysV-Init-Service/05-commands.t
 SHA1 eb27920aceeaa24af6a52780e7907d74fa3f5844 t/SysV-Init-Service/06-name.t
+SHA1 672781cca53b180aa68b59693c926c318d00355d t/SysV-Init-Service/07-status.t
 SHA1 91a482116eb54a24b1b05356245d2cd7d7f5a327 t/services/service.sh
 SHA1 91a482116eb54a24b1b05356245d2cd7d7f5a327 t/services/service1
 SHA1 f7fefea1a3fed5d063fc8c49b888b102491fff9f t/services/service2
 SHA1 64c52ca600966e9df613c6b7bb639a34ccdbdd20 t/services/service3
+SHA1 5a447aa9bc8b623023703b118f7c77eb84523307 t/services/service4
 SHA1 91a482116eb54a24b1b05356245d2cd7d7f5a327 t/services/service_no_exec
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.12 (GNU/Linux)
 
-iQEcBAEBAgAGBQJT8tPhAAoJEAwa+cf4dLBa90YH/jI41aRx+FIRqkS+XOQP5dn+
-p2i6uAOUX+79YQbe0RFHvRnYtCyFQJQ5z3kGFuF1N26Kr79adXtYQHpjQwTKLkNJ
-yKFA42mdfxIUcDeBQAEiGUICvGpzSJzsgKDG0rNRE7ThrotS0qegSdtz7bcIADRw
-3vxcYwc919dN1YJz3bjGEIl5aEl6/rXaPkLs1a5Lq+JPOkOuj+TirRDFdmq+Nt3N
-lKNWTlhnBWxwktSz0aBWCqnLRjnh52GUbcr1OfTg25YvSvKCwqrE2KqDHiqlE/Uf
-bA1nDz3a3me6dINjT19xElCMoFfdxHLsi2jXhAWnK1UbVYGnqlzMFGuE2aYe4AU=
-=8/5s
+iQEcBAEBAgAGBQJU01ifAAoJEJe+XXKaIuTlMucH/ip7/jfoj8GDhyh4w0pvpUjP
+RnLuJqpgF803VktPXUNpdYPwiLPT9X00XCIVCKw2v4OYt1O0za5wpjGQCq3goGGJ
+TPtLBRiAYxZ8+WIMK410xr33PyhYMhQT/HWnQX3IjZUbfg5NEVgqmc6KS5dbWNQq
+IRou7dYos8kpYp1QOXFuH1iVrrbG1zDdXPDy4IPLXaot+mY+HdOkV8QUwAWHkh/k
+zyXRZ4ykPoZZBa3WtJyGfrE7515BRzj/43GQRkk3Fcix3hJTVLTfEreOn04rndAS
+erFv++o+auUdBqKbbBJiUcH68tMfr/eP5dBOf8WfUdOfExotznwZI+o86/N33fI=
+=SOz6
 -----END PGP SIGNATURE-----

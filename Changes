@@ -1,4 +1,4 @@
-0.04
+0.04 2015-02-05T12:48:45+01:00
  - Add OS check (Windows doesn't supported).
  - Add THEORY section to doc.
  - Add tests for status() method.
