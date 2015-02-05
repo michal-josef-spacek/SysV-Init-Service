@@ -73,9 +73,9 @@ THEORY
      see Debian Wheezy /lib/lsb/init-functions pidofproc() and status_of_proc()
      routines.
      Exit codes:
-     0 - Program is running (pidfile exist). 
+     0 - Program is running (pidfile exist).
      0 - Program is running, but not owned by this user (pidfile exist).
-     0 - (pidfile doesn't exist and is defined PID)
+     0 - Program is running (pidfile doesn't exist and is defined PID).
      1 - Program is dead (pidfile exist).
      3 - Program is not running (pidfile doesn't exist and is defined PID).
      3 - Program probably stopped (pidfile doesn't exist and is defined PID).
