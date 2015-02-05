@@ -27,6 +27,9 @@ METHODS
 
     "commands()"
              Get service commands.
+             Be avare, command might not print any information to stdout in some
+             configuration (rewrited /etc/lsb-base-logging.sh routines to blank code for
+             quiet output).
              Returns array of possible commands alphabetically sorted.
 
     "name()"
@@ -56,17 +59,17 @@ ERRORS
      start():
              Problem with service '%s' start.
                      STDERR: %s
-             Service hasn't start command.
+                     Exit code: %s
 
      status():
              Problem with service '%s' status.
                      STDERR: %s
-             Service hasn't status command.
+                     Exit code: %s
 
      stop():
              Problem with service '%s' stop.
                      STDERR: %s
-             Service hasn't stop command.
+                     Exit code: %s
 
 THEORY
      Exit codes of init.d script in status command.
@@ -132,7 +135,7 @@ EXAMPLE
 
 DEPENDENCIES
     Class::Utils, English, Error::Pure, File::Spec::Functions,
-    IO::CaptureOutput, List::MoreUtils.
+    IO::CaptureOutput.
 
 SEE ALSO
     service.

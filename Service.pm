@@ -10,7 +10,6 @@ use English qw(-no_match_vars);
 use Error::Pure qw(err);
 use File::Spec::Functions qw(catfile);
 use IO::CaptureOutput qw(capture_exec);
-use List::MoreUtils qw(any);
 
 # Version.
 our $VERSION = 0.04;
@@ -92,19 +91,16 @@ sub stop {
 # Common command.
 sub _service_command {
 	my ($self, $command) = @_;
-	my ($stdout, $stderr, $success, $exit_code);
-	if (any { $_ eq $command } $self->commands) {
-		($stdout, $stderr, $success, $exit_code)
-			= capture_exec($self->{'_service_path'}.' '.$command);
-		if ($stderr) {
-			chomp $stderr;
-			err "Problem with service '$self->{'service'}' $command.",
-				'STDERR', $stderr;
-		}
-	} else {
-		err "Service hasn't $command command.";
+	my ($stdout, $stderr, $success, $exit_code)
+		= capture_exec($self->{'_service_path'}.' '.$command);
+	my $ret_code = $exit_code >> 8;
+	if ($stderr) {
+		chomp $stderr;
+		err "Problem with service '$self->{'service'}' $command.",
+			'STDERR', $stderr,
+			'Exit code', $ret_code;
 	}
-	return $exit_code >> 8;
+	return $ret_code;
 }
 
 1;
@@ -155,6 +151,9 @@ Constructor.
 =item C<commands()>
 
  Get service commands.
+ Be avare, command might not print any information to stdout in some
+ configuration (rewrited /etc/lsb-base-logging.sh routines to blank code for
+ quiet output).
  Returns array of possible commands alphabetically sorted.
 
 =item C<name()>
@@ -191,17 +190,17 @@ Constructor.
  start():
          Problem with service '%s' start.
                  STDERR: %s
-         Service hasn't start command.
+                 Exit code: %s
 
  status():
          Problem with service '%s' status.
                  STDERR: %s
-         Service hasn't status command.
+                 Exit code: %s
 
  stop():
          Problem with service '%s' stop.
                  STDERR: %s
-         Service hasn't stop command.
+                 Exit code: %s
 
 =head1 THEORY
 
@@ -273,8 +272,7 @@ L<Class::Utils>,
 L<English>,
 L<Error::Pure>,
 L<File::Spec::Functions>,
-L<IO::CaptureOutput>,
-L<List::MoreUtils>.
+L<IO::CaptureOutput>.
 
 =head1 SEE ALSO
 

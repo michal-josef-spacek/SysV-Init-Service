@@ -3,8 +3,6 @@ use strict;
 use warnings;
 
 # Modules.
-use English;
-use Error::Pure::Utils qw(clean);
 use File::Object;
 use SysV::Init::Service;
 use Test::More 'tests' => 3;
@@ -23,12 +21,8 @@ is($ret, '0', 'Get service status.');
 
 # Test.
 $obj = SysV::Init::Service->new(
-	'service' => 'service2',
+	'service' => 'service4',
 	'service_dir' => $service_dir->s,
 );
-eval {
-	$obj->status;
-};
-is($EVAL_ERROR, "Service hasn't status command.\n",
-	"Service hasn't status command.");
-clean();
+$ret = $obj->status;
+is($ret, '3', "Service hasn't status.");
