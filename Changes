@@ -1,4 +1,5 @@
 0.05
+ - Rewrite from IO::CaptureOutput to Capture::Tiny because FCGI.
 
 0.04 2015-02-05T12:48:45+01:00
  - Add OS check (Windows doesn't supported).

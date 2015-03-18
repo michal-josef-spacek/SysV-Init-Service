@@ -5,11 +5,11 @@ use strict;
 use warnings;
 
 # Modules.
+use Capture::Tiny qw(capture);
 use Class::Utils qw(set_params);
 use English qw(-no_match_vars);
 use Error::Pure qw(err);
 use File::Spec::Functions qw(catfile);
-use IO::CaptureOutput qw(capture_exec);
 
 # Version.
 our $VERSION = 0.05;
@@ -50,8 +50,9 @@ sub new {
 # Get service commands.
 sub commands {
 	my $self = shift;
-	my ($stdout, $stderr, $success, $exit_code)
-		= capture_exec($self->{'_service_path'});
+	my ($stdout, $stderr, $exit_code) = capture {
+		system $self->{'_service_path'};
+	};
 	if ($stderr) {
 		$stdout .= $stderr;
 	}
@@ -91,8 +92,9 @@ sub stop {
 # Common command.
 sub _service_command {
 	my ($self, $command) = @_;
-	my ($stdout, $stderr, $success, $exit_code)
-		= capture_exec($self->{'_service_path'}.' '.$command);
+	my ($stdout, $stderr, $exit_code) = capture {
+		system $self->{'_service_path'}.' '.$command;
+	};
 	my $ret_code = $exit_code >> 8;
 	if ($stderr) {
 		chomp $stderr;
@@ -268,11 +270,11 @@ Constructor.
 
 =head1 DEPENDENCIES
 
+L<Capture::Tiny>,
 L<Class::Utils>,
 L<English>,
 L<Error::Pure>,
-L<File::Spec::Functions>,
-L<IO::CaptureOutput>.
+L<File::Spec::Functions>.
 
 =head1 SEE ALSO
 

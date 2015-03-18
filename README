@@ -134,8 +134,8 @@ EXAMPLE
      # status
 
 DEPENDENCIES
-    Class::Utils, English, Error::Pure, File::Spec::Functions,
-    IO::CaptureOutput.
+    Capture::Tiny, Class::Utils, English, Error::Pure,
+    File::Spec::Functions.
 
 SEE ALSO
     service.

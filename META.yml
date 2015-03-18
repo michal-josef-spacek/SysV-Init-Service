@@ -26,11 +26,11 @@ no_index:
     - inc
     - t
 requires:
+  Capture::Tiny: 0
   Class::Utils: 0.05
   English: 0
   Error::Pure: 0.15
   File::Spec::Functions: 0
-  IO::CaptureOutput: 0
   List::MoreUtils: 0
   perl: 5.6.0
 resources:
