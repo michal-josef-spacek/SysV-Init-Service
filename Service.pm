@@ -12,7 +12,7 @@ use Error::Pure qw(err);
 use File::Spec::Functions qw(catfile);
 
 # Version.
-our $VERSION = 0.05;
+our $VERSION = 0.06;
 
 # Construct.
 sub new {
@@ -297,6 +297,6 @@ L<http://skim.cz>
 
 =head1 VERSION
 
-0.05
+0.06
 
 =cut
