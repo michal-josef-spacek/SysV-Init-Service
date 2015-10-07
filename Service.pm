@@ -278,7 +278,13 @@ L<File::Spec::Functions>.
 
 =head1 SEE ALSO
 
-L<service>.
+=over
+
+=item L<service>
+
+run a System V init script
+
+=back
 
 =head1 REPOSITORY
 

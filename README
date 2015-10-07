@@ -138,7 +138,8 @@ DEPENDENCIES
     File::Spec::Functions.
 
 SEE ALSO
-    service.
+    service
+        run a System V init script
 
 REPOSITORY
     <https://github.com/tupinek/SysV-Init-Service>
