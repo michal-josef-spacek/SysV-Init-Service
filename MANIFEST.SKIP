@@ -10,3 +10,4 @@ MANIFEST.SKIP
 SPEC
 MYMETA.json
 MYMETA.yml
+.travis.yml
