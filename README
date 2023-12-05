@@ -140,7 +140,7 @@ SEE ALSO
         run a System V init script
 
 REPOSITORY
-    <https://github.com/tupinek/SysV-Init-Service>
+    <https://github.com/michal-josef-spacek/SysV-Init-Service>
 
 AUTHOR
     Michal Špaček <mailto:skim@cpan.org>

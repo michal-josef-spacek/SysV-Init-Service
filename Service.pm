@@ -283,7 +283,7 @@ run a System V init script
 
 =head1 REPOSITORY
 
-L<https://github.com/tupinek/SysV-Init-Service>
+L<https://github.com/michal-josef-spacek/SysV-Init-Service>
 
 =head1 AUTHOR
 

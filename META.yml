@@ -33,7 +33,7 @@ requires:
   perl: 5.6.0
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=SysV-Init-Service
-  homepage: https://github.com/tupinek/SysV-Init-Service
+  homepage: https://github.com/michal-josef-spacek/SysV-Init-Service
   license: http://opensource.org/licenses/bsd-license.php
-  repository: git://github.com/tupinek/SysV-Init-Service
+  repository: git://github.com/michal-josef-spacek/SysV-Init-Service
 version: '0.07'
