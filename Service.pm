@@ -287,13 +287,13 @@ L<https://github.com/michal-josef-spacek/SysV-Init-Service>
 
 =head1 AUTHOR
 
-Michal Špaček L<mailto:skim@cpan.org>
+Michal Josef Špaček L<mailto:skim@cpan.org>
 
 L<http://skim.cz>
 
 =head1 LICENSE AND COPYRIGHT
 
-© 2013-2023 Michal Špaček
+© 2013-2023 Michal Josef Špaček
 
 BSD 2-Clause License
 
