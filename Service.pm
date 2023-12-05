@@ -293,7 +293,7 @@ L<http://skim.cz>
 
 =head1 LICENSE AND COPYRIGHT
 
-© 2013-2015 Michal Špaček
+© 2013-2023 Michal Špaček
 
 BSD 2-Clause License
 
