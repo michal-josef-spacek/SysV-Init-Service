@@ -87,11 +87,9 @@ THEORY
      4 - Unable to determine status (pidfile doesn't exist).
 
 EXAMPLE
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use File::Spec::Functions qw(catfile);
      use File::Temp qw(tempfile tempdir);
      use IO::Barf qw(barf);

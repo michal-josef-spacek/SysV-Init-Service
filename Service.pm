@@ -1,17 +1,14 @@
 package SysV::Init::Service;
 
-# Pragmas.
 use strict;
 use warnings;
 
-# Modules.
 use Capture::Tiny qw(capture);
 use Class::Utils qw(set_params);
 use English qw(-no_match_vars);
 use Error::Pure qw(err);
 use File::Spec::Functions qw(catfile);
 
-# Version.
 our $VERSION = 0.07;
 
 # Construct.
@@ -222,11 +219,9 @@ Constructor.
 
 =head1 EXAMPLE
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use File::Spec::Functions qw(catfile);
  use File::Temp qw(tempfile tempdir);
  use IO::Barf qw(barf);
