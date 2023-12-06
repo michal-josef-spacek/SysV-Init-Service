@@ -127,9 +127,9 @@ SysV::Init::Service - Class for SysV init service manipulation.
 
 =head1 METHODS
 
-=over 8
+=head2 C<new>
 
-=item C<new(%parameters)>
+ my $obj = SysV::Init::Service->new(%parameters);
 
 Constructor.
 
@@ -137,46 +137,63 @@ Constructor.
 
 =item * C<service>
 
- Service.
- Default value is undef.
- It is required.
+Service.
+
+Default value is undef.
+
+It is required.
 
 =item * C<service_dir>
 
- Service directory.
- Default value is '/etc/init.d'.
+Service directory.
+
+Default value is '/etc/init.d'.
 
 =back
 
-=item C<commands()>
+=head2 C<commands>
 
- Get service commands.
- Be avare, command might not print any information to stdout in some
- configuration (rewrited /etc/lsb-base-logging.sh routines to blank code for
- quiet output).
- Returns array of possible commands alphabetically sorted.
+ my @commands = $obj->commands;
 
-=item C<name()>
+Get service commands.
 
- Get service name.
- Returns string with service name.
+Be avare, command might not print any information to stdout in some
+configuration (rewrited /etc/lsb-base-logging.sh routines to blank code for
+quiet output).
 
-=item C<start()>
+Returns array of possible commands alphabetically sorted.
 
- Run service start command.
- Returns exit code.
+=head2 C<name>
 
-=item C<status()>
+ my $name = $obj->name;
 
- Run service status command and return exit code.
- Returns exit code.
+Get service name.
 
-=item C<stop()>
+Returns string with service name.
 
- Run service stop command.
- Returns exit code.
+=head2 C<start>
 
-=back
+ my $exit_code = $obj->start;
+
+Run service start command.
+
+Returns exit code.
+
+=head2 C<status>
+
+ my $exit_code = $obj->status;
+
+Run service status command and return exit code.
+
+Returns exit code.
+
+=head2 C<stop>
+
+ my $exit_code = $obj->stop;
+
+Run service stop command.
+
+Returns exit code.
 
 =head1 ERRORS
 
