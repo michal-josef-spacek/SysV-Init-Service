@@ -3,6 +3,7 @@ NAME
 
 SYNOPSIS
      use SysV::Init::Service;
+
      my $obj = SysV::Init::Service->new(%parameters);
      my @commands = $obj->commands;
      my $name = $obj->name;

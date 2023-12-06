@@ -117,6 +117,7 @@ SysV::Init::Service - Class for SysV init service manipulation.
 =head1 SYNOPSIS
 
  use SysV::Init::Service;
+
  my $obj = SysV::Init::Service->new(%parameters);
  my @commands = $obj->commands;
  my $name = $obj->name;
