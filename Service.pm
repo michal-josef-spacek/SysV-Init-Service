@@ -237,6 +237,8 @@ Returns exit code.
 
 =head1 EXAMPLE
 
+=for comment filename=create_fake_service_and_print_its_commands.pl
+
  use strict;
  use warnings;
 
