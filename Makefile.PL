@@ -28,7 +28,6 @@ requires 'Class::Utils' => 0.05;
 requires 'English' => 0;
 requires 'Error::Pure' => 0.15;
 requires 'File::Spec::Functions' => 0;
-requires 'List::MoreUtils' => 0;
 requires 'perl' => '5.6.0';
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/SysV-Init-Service/issues';
 resources 'homepage' => 'https://github.com/michal-josef-spacek/SysV-Init-Service';
